@@ -43,9 +43,8 @@ html{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    gap:15rem;
-    font-weight:
-    bold;
+    gap:10rem;
+    font-weight: bold;
     font-size: 36px;
 }
 .p-centre{
@@ -54,13 +53,15 @@ html{
 .todo-form{
 display: flex;
 justify-content: space-between;
-margin-bottom: 25%;
+margin-bottom: 25px;
+
 }
 #todo-input {
 flex:1;
 outline:none;
 font-size: 18px;
-color:wh;
+color:white;
+padding: 10px 10px 10px 20px;
 border-radius: 6px;
 }
 #todo-input::placeholder{
@@ -81,4 +82,19 @@ color : white;
 font-size:xx-large;
 border-radius: 48px;
 width: 45px;
+}
+ul{
+    /* padding-right: 85px;
+    padding-left: 85px; */
+ padding: 0px 40px 10px 0px; 
+
+}
+ li {
+list-style: none;
+display: flex;
+margin-bottom: 10px;
+justify-content: space-between;
+gap: 2px;
+background: rgb(39, 37, 37);
+border-radius: 5px;
 }
