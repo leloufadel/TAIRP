@@ -1,11 +1,3 @@
-/* body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(92, 4, 92);
-    font-family: poppins;
-    font-size: 16px;
-   color:aliceblue;
-} */
 body {
     margin: 0;
     padding: 0;
@@ -22,6 +14,7 @@ html{
     position: relative;
     height: 60vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(218, 208, 208);
@@ -36,16 +29,56 @@ html{
     object-fit: cover; 
     opacity: 0.1;
 }
-
+.container{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    background: transparent;
+    border: 2px solid #e6b7eca1;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
 .content {
     z-index: 1; 
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap:15rem;
+    font-weight:
+    bold;
+    font-size: 36px;
 }
-
+.p-centre{
+    letter-spacing: 1.3rem;
+}
+.todo-form{
+display: flex;
+justify-content: space-between;
+margin-bottom: 25%;
+}
+#todo-input {
+flex:1;
+outline:none;
+font-size: 18px;
+color:wh;
+border-radius: 6px;
+}
+#todo-input::placeholder{
+    color: #bfbfbf;
+}
 .black-section {
     flex: 1;
     background: #1b1b1bef; 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.add-Button {
+border:none;
+outline: none;
+background-color: #e6b7eca1;
+color : white;
+font-size:xx-large;
+border-radius: 48px;
+width: 45px;
 }
