@@ -60,12 +60,12 @@ margin-bottom: 25px;
 flex:1;
 outline:none;
 font-size: 18px;
-color:white;
+color:rgb(145, 4, 4);
 padding: 10px 10px 10px 20px;
 border-radius: 6px;
 }
 #todo-input::placeholder{
-    color: #bfbfbf;
+    color: #070707;
 }
 .black-section {
     flex: 1;
@@ -90,11 +90,19 @@ ul{
 
 }
  li {
-list-style: none;
 display: flex;
+list-style: none;
 margin-bottom: 10px;
-justify-content: space-between;
-gap: 2px;
+padding: 10px;
+justify-content: space-around;
 background: rgb(39, 37, 37);
 border-radius: 5px;
+}
+.editButton, .del-Button{
+    border:none;
+    outline: none;
+    background-color: #e6b7eca1;
+    color : white;
+    font-size:xx-large;
+    width: 40px;
 }

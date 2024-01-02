@@ -46,7 +46,11 @@ function displayTodos() {
 
         };
         editButton.onclick = function(){
-            editTodo(index);
+            var newText = prompt("Edit todo:", todo.value);
+            if (newText !== null) {
+
+            editTodo(index, newText);
+            }
         }
         listContainer.appendChild(listItem);
 
@@ -57,6 +61,12 @@ function displayTodos() {
 }
 function removeTodo(index){
     items.splice(index, 1);
+    localStorage.setItem('todo-list', JSON.stringify(items));
+    displayTodos();
+
+}
+function editTodo(index, newText){
+    items[index].value = newText
     localStorage.setItem('todo-list', JSON.stringify(items));
     displayTodos();
 
