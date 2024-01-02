@@ -31,7 +31,7 @@ function createButton(className, iconClass) {
 
 function displayTodos() {
     var listContainer = document.getElementById("todo-list");
-    listContainer.innerHTML = ""; // Clear the existing list
+    listContainer.innerHTML = ""; // 
 
     items.forEach(function(todo, index) {
         var listItem = document.createElement("li");
@@ -41,7 +41,6 @@ function displayTodos() {
         var removeButton = createButton("del-Button", "fa-trash");
 
         removeButton.onclick = function() {
-            // Call the removeTodo function with the index of the current item
             removeTodo(index);
 
         };
