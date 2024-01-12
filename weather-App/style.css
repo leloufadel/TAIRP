@@ -1,0 +1,28 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 186, 245);
+}
+.wrapper {
+    width:400px;
+    border-radius:7px;
+    background-color: white;
+}
+.wrapper header{
+    color: rgb(36, 149, 214);
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid whitesmoke;
+
+}
