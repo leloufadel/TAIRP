@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div id="Overlay">
+        <div class="bg">
+            <img src="Bag.jpg" alt="Background-Image" class="bg-image">
+        </div> 
+        <div class="container">
+
+        <div class="content">
+            <p class ="p-centre">Todo </p>
+        
+        <p class="p-end"><i class="fa fa-sun-o"></i></p>
+        </div>
+        <div class="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a Todo..." />
+            <button type="submit" onclick="addTodo()" class="add-Button">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </div>
+        <div> <ul id="todo-list">
+            <p id="list"></p>
+          </ul></div>
+        
+         </div>
+    </div>
+    <div class="black-section">
+    </div>
+            <script src="./script.js"></script>
+</body>
+</html>
