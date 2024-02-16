@@ -1,24 +1,31 @@
 *{
     box-sizing: border-box;
 }
-.search-form {
-    padding:20px;
+.search-form input[type=text]{
+    padding:10px;
     font-size: 17px;
     border: 1px solid gray;
     float: left;
-    width: 80%; 
+    width: 30%; 
     background: #f1f1f1; 
 }
 .search-form button {
-    float: right;
+    float: left;
     width: 20%;
     padding:10px;
     background: #2196F3;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
 
 }
-
+.search-form button:hover{
+    background: #0b7dda;
+}
+.search-form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
